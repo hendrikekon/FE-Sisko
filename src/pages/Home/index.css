@@ -1,0 +1,47 @@
+.product-container{
+    display: flex;
+    flex-direction: column;
+}
+.hero-container {
+    background-image: url('https://images.ctfassets.net/xanbi6q061ft/2tY0b8S5xijcUnoLra9GLo/a05393146b91ab8b6f87f011969dcfce/20240514_nike_bp_running_hero_d.png');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+.product-page {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* .product-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+} */

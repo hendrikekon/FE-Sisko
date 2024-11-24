@@ -56,9 +56,6 @@ const CardProduct = ({ product, isLoggedIn }) => {
                     ))}
                 </div>
 
-                {/* <button className="add-to-cart" onClick={handleAddToCart}>
-                    <img src={imgCart} alt="imgcart" className="img-cart" />
-                </button> */}
             </div>
         </div>
     );

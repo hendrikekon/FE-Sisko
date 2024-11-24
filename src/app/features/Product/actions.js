@@ -107,11 +107,6 @@ export const setBrand = (brand) => {
         dispatch(fetchProduct(brand));
     };
 };
-// export const setBrand = (selectedBrand) => ({
-//     type: 'SET_BRAND',
-//     payload: selectedBrand,
-// });
-
 
 export const setKeyword = (keyword) => ({
     type: SET_KEYWORD,

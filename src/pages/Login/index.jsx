@@ -32,7 +32,6 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        // const data = {email, password}
         const validationErrors = validate();
         if (Object.keys(validationErrors).length > 0) {
           setErrors(validationErrors);
@@ -41,16 +40,10 @@ const LoginForm = ({ setIsLoggedIn }) => {
         try {
             console.log(email)
             console.log(password)
-            // const response = await loginUser({email, password});
-            // console.log('login Success:', response);
-            // const { user, token } = response.data;
-            // localStorage.setItem('auth', JSON.stringify({ user, token }));
-            // dispatch(userLogin({ user, token }));
             await dispatch(performLogin({email, password}))
             setIsLoggedIn(true);
             navigate('/');
         } catch (error) {
-            // console.error('login Failed: ', error.message);
             setErrors({ form: 'Login Gagal. Email atau Password Salah' });
             setIsLoggedIn(false);
         }

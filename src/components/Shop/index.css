@@ -3,7 +3,6 @@
     display: inline-block;
 }
 
-/* Dropdown toggle button */
 .dropdown-toggle {
     background: none;
     border: none;
@@ -15,7 +14,6 @@
     outline: none;
 }
 
-/* Dropdown menu */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -27,21 +25,18 @@
     margin-top: 10px;
 }
 
-/* Show the dropdown menu when .show class is applied */
 .dropdown-menu.show {
     display: block;
-    max-height: 200px; /* Set maximum height */
-    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 200px;
+    overflow-y: auto;
 }
 
-/* Dropdown items */
 .dropdown-menu li {
     list-style: none;
     padding: 8px 16px;
     cursor: pointer;
 }
 
-/* Dropdown item buttons */
 .dropdown-menu li button {
     background: none;
     border: none;
@@ -53,12 +48,10 @@
     cursor: pointer;
 }
 
-/* Hover effect for dropdown items */
 .dropdown-menu li button:hover {
     background-color: #f0f0f0;
 }
 
-/* Styling for the parent component link */
 .linkMenu {
     text-decoration: none;
     color: #333;

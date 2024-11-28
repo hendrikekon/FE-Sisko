@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+import authMiddleware from "./middleware/authMiddleware";
 import productReducer from './features/Product/reducer';
 import authReducer from './features/Auth/reducer';
 import cartReducer from './features/Carts/reducer';
@@ -9,8 +10,9 @@ const store = configureStore({
     product: productReducer,
     cart: cartReducer,
     auth: authReducer,
-    address: addressReducer
+    address: addressReducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(authMiddleware),
 });
 
 export default store;
